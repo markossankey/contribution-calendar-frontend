@@ -6,4 +6,5 @@ body {
   background-color: theme("colors.gray.800");
   margin: 0 min(5vw, 5rem);
   color: theme("colors.gray.400");
+  overflow-y: hidden;
 }

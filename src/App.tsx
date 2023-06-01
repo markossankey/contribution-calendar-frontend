@@ -4,7 +4,6 @@ import { Form } from "./components/Form";
 import { Stats } from "./components/Stats";
 import { GlobalStateProvider } from "./context/GlobalState";
 const queryClient = new QueryClient({ defaultOptions: { queries: { refetchOnWindowFocus: false } } });
-
 function App() {
   return (
     <GlobalStateProvider>

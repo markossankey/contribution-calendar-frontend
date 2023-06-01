@@ -30,7 +30,7 @@ export const Calendar = ({}) => {
     (day) => contributionsObj[day.format("M-D-YY")] || { date: day.format("M-D-YY"), total: 0, byAccount: [] }
   );
   return (
-    <div className="grid grid-rows-7 grid-cols-53 border border-solid rounded-md text-gray-400  w-fit mx-auto grid-flow-col p-4 gap-1 drop-shadow-lg">
+    <div className="grid grid-rows-7 grid-cols-53 border border-solid rounded-md border-gray-400 w-fit  grid-flow-col p-4 gap-1 drop-shadow-lg">
       {dailyContributions.map((dailyContribution) => (
         <ContributionDay
           key={dailyContribution.date}
@@ -95,7 +95,7 @@ const ContributionDay = ({ largestContribution, dailyContribution }: Contributio
       }
     >
       <div
-        className="row-span-1 col-span-1 w-3 h-3 bg-blue-50 rounded-sm"
+        className="row-span-1 col-span-1 w-3 h-3 bg-gray-300 rounded-sm"
         style={{ opacity }} // todo: make this relative to the max
         onClick={() => console.log(dailyContribution)}
       />
